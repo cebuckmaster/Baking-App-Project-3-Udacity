@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/main_media_frame"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:layout_margin="16dp"
+        android:background="@color/exoplayerColor">
+
+        <com.google.android.exoplayer2.ui.SimpleExoPlayerView
+            android:id="@+id/exo_media_player"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"/>
+
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/tv_no_video_message"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="@string/no_video_text"/>
+
+    <View
+        android:id="@+id/media_divider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_weight="0"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/colorAccent"/>
+
+    <ImageView
+        android:id="@+id/iv_step_img"
+        android:layout_width="@android:dimen/thumbnail_width"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_gravity="center"
+        android:background="@drawable/recipe"/>
+
+    <View
+        android:id="@+id/thumbnail_divider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_weight="0"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/colorAccent"/>
+
+
+    <TextView
+        android:id="@+id/tv_step_description"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:textSize="18sp"
+        android:textColor="@color/primaryText"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:text=""
+        android:gravity="center_vertical"/>
+
+    <LinearLayout
+        android:id="@+id/ll_step_buttons"
+        android:orientation="horizontal"
+        android:gravity="bottom|center"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+
+        <Button
+            android:id="@+id/btn_previous_step"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:textColor="@color/primaryText"
+            android:layout_weight="1"
+            android:text="@string/previous_step_btn_text"/>
+
+        <Button
+            android:id="@+id/btn_next_step"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:textColor="@color/primaryText"
+            android:layout_weight="1"
+            android:text="@string/next_step_btn_text" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

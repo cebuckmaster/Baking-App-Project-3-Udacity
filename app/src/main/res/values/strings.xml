@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Baking App</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="no_description_found">No Description found for this step</string>
+    <string name="main_activity_error_msg">An error has occured. Please try again!!!!</string>
+    <string name="recipe_name_holder">Some Recipe Name</string>
+    <string name="working_recipe">Working Recipe</string>
+    <string name="recipe_step_title">Recipe Steps</string>
+    <string name="no_video_text">No Video for this Step</string>
+    <string name="previous_step_btn_text">Previous Step</string>
+    <string name="next_step_btn_text">Next Step</string>
+    <string name="recipe_card_label">Recipe:</string>
+    <string name="servings_card_label">Servings:</string>
+    <string name="dash">-</string>
+
+<!-- Widget Strings -->
+    <string name="no_recipe_saved">No Working Recipe Found</string>
+    <string name="no_working_recipe">Please select a working recipe from the Baking App</string>
+</resources>
